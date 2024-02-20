@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flask Application</title>
+</head>
+<body>
+    <!-- Html Comment -->
+    <!-- database password: 123456 -->
+
+
+    {# jinja comment #}
+    {# database password: 123654 #}    
+
+
+    <form method="POST" action="{{ url_for('post_view') }}">
+        <input type="text" placeholder="name">
+        <input type="submit" value="Hello">
+        <input name="csrf_token" type="hidden" value="{{ csrf_token() }}">
+    </form>
+</body>
+</html>
